@@ -7,9 +7,11 @@ box-sizing: border-box
       height: 600px;
       border: 2px solid red;
       display: flex;
-      flex-direction: column;
+      flex-flow: column wrap;
+      justify-content: space-around;
       align-items: center;
-      justify-content: space-between;
+
+      
 }
 
 .box{
