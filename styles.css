@@ -22,11 +22,11 @@ span {
     line-height: 1.25;
 }
 
-h1{
+h1 {
     font-size: 55px;
 }
 
-h2{
+h2 {
     font-size: 24px;
     font-weight: 500;
 }
@@ -159,23 +159,35 @@ nav {
     min-height: 100vh;
 }
 
-.aboutMe__container{
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mainContainer{
+    height: 100vh;
+}
+
+.aboutMe__container {
     max-width: 1200px;
     margin: auto;
 }
 
-.aboutMe__info{
+.aboutMe__text{
+    padding: 0 25px;
+}
+
+.aboutMe__info {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.aboutMe__img,
-.aboutMe__text{
-    flex: 0 0 50%;
-    padding-left: 50px;
-    max-width: 50%;
 }
 
 @keyframes animate-profile-picture {
@@ -192,16 +204,24 @@ nav {
     }
 }
 
+.about-me__picture {
+    width: 400px;
+    padding: 0 25px;
+}
+
 .about-me__info--title {
     animation: fade-up 650ms 400ms backwards;
 }
 
 .about-me__links {
-    position: fixed;
-    top: 40%;
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
+    height: 200px;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 15px;
+    top: 40%;
+    z-index: 9;
 }
 
 .about-me__link {
@@ -425,13 +445,31 @@ footer {
 
 /* Small Form Factor */
 
+@media (max-width: 950px){
+    p,
+    h1,
+    h2{
+        text-align: center;
+    }
+
+    .about-me__picture{
+        padding: 0 50px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         height: 68px;
     }
 
-    h1 {
-        font-size: 28px;
+    .main{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .about-me__picture{
+        margin-top: 100px;
+        margin-bottom: 25px;
     }
 
     .about-me__info--para {
@@ -481,5 +519,13 @@ footer {
     .project__description--sub-title {
         text-align: center;
         margin: 12px 0;
+    }
+
+    .about-me__picture{
+        padding: 0 100px;
+    }
+
+    h2{
+        font-size: 18px;
     }
 }
