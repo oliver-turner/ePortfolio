@@ -74,14 +74,6 @@ li {
     list-style-type: none;
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-1 {
-    flex: 1;
-}
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -110,18 +102,26 @@ section:nth-child(even) {
 
 nav {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
     height: 100px;
 
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 9;
+}
+
+.navContainer {
+    margin: 20px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav__link--list {
@@ -160,17 +160,16 @@ nav {
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
     margin: auto;
-    justify-content: space-around;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .mainContainer {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -234,7 +233,7 @@ nav {
 .about-me__links {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .about-me__link {
@@ -248,13 +247,13 @@ nav {
 .aboutMe__button {
     padding: 10px 0;
     margin: 10px 0;
+    text-align: center;
 }
 
 .button__aboutMe {
     width: 150px;
     padding: 10px 10px;
     border-radius: 15px;
-    backdrop-filter: blur(20px);
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-size: large;
@@ -491,14 +490,31 @@ footer {
         height: 68px;
     }
 
+    .navContainer {
+        margin: 12px;
+        padding: 12px 0;
+    }
+
+    .about-me__picture--mask {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me__picture {
+        width: 400px;
+        transform: scale(0.5);
+        padding: 0 50px 50px 0;
+        transform: translate(-70px, -95px);
+    }
+
+
     .main {
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
 
-    .about-me__picture {
-        margin-top: 100px;
-        margin-bottom: 25px;
+    .aboutMe__img {
+        margin: 100px 0 0 0;
     }
 
     .about-me__info--para {
@@ -522,6 +538,10 @@ footer {
 @media (max-width: 480px) {
     .nav__link:not(:last-child) {
         display: none;
+    }
+
+    h2 {
+        font-size: 18px;
     }
 
     .project__description {
@@ -548,13 +568,5 @@ footer {
     .project__description--sub-title {
         text-align: center;
         margin: 12px 0;
-    }
-
-    .about-me__picture {
-        padding: 0 100px;
-    }
-
-    h2 {
-        font-size: 18px;
     }
 }
