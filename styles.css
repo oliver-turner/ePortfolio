@@ -122,10 +122,28 @@ nav {
     align-items: center;
 }
 
+.burgerMenu a {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    backdrop-filter: blur(40px);
+    background-color: grey;
+    box-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
 .hamburgerMenu {
     width: 50px;
     height: 50px;
     box-sizing: border-box;
+    
 }
 
 .hamburgerMenu .toggle {
@@ -146,7 +164,7 @@ nav {
     align-items: center;
     padding: 10px;
     transition: transform 1s ease;
-
+    z-index: 9;
 }
 
 .hamburgerMenu .hamburger .bar {
@@ -253,6 +271,7 @@ nav {
 .aboutMe__button {
     padding: 10px 0;
     margin: 10px 0;
+    animation: fade-up 900ms 800ms backwards;
 }
 
 .button__aboutMe {
