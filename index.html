@@ -64,41 +64,70 @@
                         </a>
                     </div>
                 </div>
-                <a href="#projects" class="scroll">
-                    <div>&#8659;</div>
-                </a>
+                <div class="scrollIcon">
+                    <a href="#projects" class="scroll">
+                        <span>Projects</span>
+                        <div>&#8659;&#8659;</div>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-    <section id="languages">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">This is my <span class="text--red">technology stack</span> </h1>
-                <div class="language__list">
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="/assets/HTML5_badge.svg.png" alt="" class="language__img">
-                        </figure>
-                        <span class="language__name">HTML</span>
+        <div class="modal">
+            <div class="modal__aboutMe">
+                <h1>About Me</h1>
+                <h3> Studying Bachelor of Economics and Information Technology (Cyber Security) at Macquarie University
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deleniti provident in quaerat qui optio
+                    obcaecati est nihil illum saepe culpa hic placeat nulla exercitationem, ducimus quod, quas quidem!
+                    Mollitia.</p>
+            </div>
+            <div class="modal__rightWrapper">
+                <div class="modal__techStack">
+                    <h1>My Tech Stack</h1>
+                    <div class="language__list">
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="/assets/HTML5_badge.svg.png" alt="" class="language__img">
+                            </figure>
+                            <span class="language__name">HTML</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="/assets/CSS3_logo.svg.png" alt="" class="language__img">
+                            </figure>
+                            <span class="language__name">CSS</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="/assets/Javascript.png" alt="" class="language__img--javascript">
+                            </figure>
+                            <span class="language__name">Javascript</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="/assets/HTML5_badge.svg.png" alt="" class="language__img">
+                            </figure>
+                            <span class="language__name">TBA</span>
+                        </div>
                     </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="/assets/CSS3_logo.svg.png" alt="" class="language__img">
-                        </figure>
-                        <span class="language__name">CSS</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="/assets/Javascript.png" alt="" class="language__img--javascript">
-                        </figure>
-                        <span class="language__name">Javascript</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="/assets/HTML5_badge.svg.png" alt="" class="language__img">
-                        </figure>
-                        <span class="language__name">TBA</span>
-                    </div>
+                </div>
+                <div class="modal__contactMe">
+                    <h1>Contact Me!</h1>
+                    <form action="" id="contactMe__form">
+                        <div class="formItem">
+                            <label class="formItem__label">Name</label>
+                            <input type="text" name="userName" class="input" required>
+                        </div>
+                        <div class="formItem">
+                            <label class="formItem__label">Email</label>
+                            <input type="email" class="input" name="userEmail" required>
+                        </div>
+                        <div class="formItem">
+                            <label class="formItem__label">Message</label>
+                            <textarea name="message" class="input" type="text" required></textarea>
+                        </div>
+                        <button id="contactMe__submit" class="formSubmit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
