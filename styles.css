@@ -123,12 +123,12 @@ nav {
 }
 
 .burgerMenu a {
-    width: 40px;
-    height: 40px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     font-size: 20px;
     backdrop-filter: blur(40px);
@@ -137,13 +137,13 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.3);
     text-decoration: none;
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
 .hamburgerMenu {
     width: 50px;
     height: 50px;
     box-sizing: border-box;
-    
 }
 
 .hamburgerMenu .toggle {
@@ -203,6 +203,10 @@ nav {
     transform: rotate(270deg);
 }
 
+.hamburgerMenu .toggle:checked+.hamburger+.burgerMenu a {
+    opacity: 1;
+}
+
 /* About me */
 
 #about-me {
@@ -223,11 +227,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
-}
-
-.aboutMe__container {
-    max-width: 1200px;
-    margin: auto;
 }
 
 .aboutMe__text {
@@ -282,6 +281,33 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-size: large;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.50);
+}
+
+.scroll {
+    position: absolute;
+    font-size: 40px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-20px);
+    animation: flash linear 2s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes animate-profile-picture {
