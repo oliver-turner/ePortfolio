@@ -131,9 +131,9 @@ nav {
     height: 40px;
     border-radius: 50%;
     font-size: 20px;
-    backdrop-filter: blur(40px);
-    background-color: grey;
-    box-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
     text-decoration: none;
     transition: all 0.3s ease;
@@ -315,18 +315,44 @@ nav {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
-    display: none;
 }
 
-.modal__aboutMe, .modal__rightWrapper{
+.modal h1 {
+    font-size: 35px;
+}
+
+.modal h3{
+    margin: 20px 0;
+}
+
+.formItem__label{
+    display: block;
+}
+
+.formItem{
+    margin-bottom: 10px;
+}
+
+.input{
+    width: 100%;
+    
+}
+
+.modal__aboutMe,
+.modal__rightWrapper {
     width: 50%;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.modal__techStack, 
-.modal__contactMe{
-    height: 50%;
+.modal__rightWrapper{
+    justify-content: space-around;
+}
+
+.modal__techStack,
+.modal__contactMe {
     width: 100%;
 }
 
