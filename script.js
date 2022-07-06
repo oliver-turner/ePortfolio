@@ -1,3 +1,5 @@
+let modalOpen = false;
+
 function toggleBurger() {
     let toggleMenu = document.getElementById("toggle");
     let burgerItems = document.querySelectorAll(".hamburgerMenu a");
@@ -16,3 +18,11 @@ function toggleBurger() {
     });
 }
 
+function toggleModal() {
+    if (modalOpen) {
+        modalOpen = false;
+        return document.body.classList.remove("modalOpen");
+    }
+    modalOpen = true;
+    document.body.classList += "modalOpen";
+}
