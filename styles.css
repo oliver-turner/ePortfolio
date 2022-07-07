@@ -117,7 +117,7 @@ nav {
 }
 
 .header {
-    height: 100px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -213,10 +213,11 @@ nav {
 
 #about-me {
     min-height: 100vh;
+    padding-top: 100px;
 }
 
 .main {
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     margin: auto;
     display: flex;
     align-items: center;
@@ -301,6 +302,12 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll span {
@@ -648,7 +655,7 @@ footer {
 
 /* Small Form Factor */
 
-@media (max-height:800px) {
+@media (max-height:720px) {
     .scrollIcon {
         display: none;
     }
@@ -665,6 +672,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    #about-me{
+        padding-top: 0;
+    }
+
 
     nav,
     .header {
@@ -730,6 +742,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+
     .nav__link:not(:last-child) {
         display: none;
     }
