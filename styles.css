@@ -283,10 +283,12 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-size: large;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
 }
 
 .button__aboutMe:hover,
-.burgerMenu a:hover {
+.burgerMenu a:hover,
+.formSubmit:hover {
     box-shadow: inset 0 1px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -324,6 +326,11 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     z-index: -1;
+    display: none;
+}
+
+.modalOpen nav {
+    opacity: 0;
     display: none;
 }
 
@@ -387,6 +394,17 @@ nav {
     right: 40px;
     font-size: 30px;
     z-index: 10;
+    cursor: pointer;
+}
+
+.formSubmit {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: large;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.50);
     cursor: pointer;
 }
 
@@ -640,10 +658,7 @@ footer {
 
     p,
     h1,
-    h2 {
-        text-align: center;
-    }
-
+    h2,
     .aboutMe__button {
         text-align: center;
     }
@@ -675,6 +690,21 @@ footer {
     .main {
         flex-direction: column-reverse;
         justify-content: flex-end;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .modal__aboutMe,
+    .modal__rightWrapper {
+        width: 100%;
     }
 
     .aboutMe__img {
