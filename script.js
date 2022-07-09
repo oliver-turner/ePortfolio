@@ -26,3 +26,4 @@ function toggleModal() {
     modalOpen = true;
     document.body.classList += "modalOpen";
 }
+
