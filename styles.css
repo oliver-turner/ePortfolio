@@ -89,10 +89,6 @@ li {
     color: red;
 }
 
-section:nth-child(even) {
-    background-color: #f8f8f8;
-}
-
 .container {
     padding: 100px 0;
 }
@@ -102,7 +98,11 @@ section:nth-child(even) {
     text-align: center;
 }
 
-/* Navigation Bar */
+/* 
+
+Navigation Bar
+
+*/
 
 nav {
     position: fixed;
@@ -212,11 +212,16 @@ nav {
     opacity: 1;
 }
 
-/* About me */
+/*
+
+About me 
+
+*/
 
 #about-me {
     min-height: 100vh;
     padding-top: 100px;
+    background-color: #f8f8f8;
 }
 
 .main {
@@ -273,7 +278,7 @@ nav {
     animation: fade-down 800ms 1000ms backwards;
 }
 
-.about-me__link:hover{
+.about-me__link:hover {
     transform: scale(1.5);
     transition: transform 200ms ease;
 }
@@ -531,7 +536,16 @@ nav {
     opacity: 1;
 }
 
-/* Projects */
+/* 
+
+Projects 
+
+*/
+
+#projects {
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
 
 .project {
     margin-bottom: 135px;
@@ -617,10 +631,18 @@ nav {
     color: #fff;
 }
 
-/* footer */
+/* 
+
+footer 
+
+*/
 
 footer {
+    height: 100vh;
     background-color: #242424;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
 }
 
 
@@ -637,6 +659,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 8% 0;
+    height: 100%;
 }
 
 .footer__logo--image {
@@ -669,7 +692,11 @@ footer {
     opacity: 1;
 }
 
-/* Small Form Factor */
+/* 
+
+Small Form Factor 
+
+*/
 
 @media (max-height:720px) {
     .scrollIcon {
