@@ -795,10 +795,6 @@ Small Form Factor
 
 @media (max-width: 480px) {
 
-    .nav__link:not(:last-child) {
-        display: none;
-    }
-
     h2 {
         font-size: 18px;
     }
