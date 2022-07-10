@@ -222,8 +222,6 @@ About me
     min-height: 100vh;
     padding-top: 100px;
     background-color: #f8f8f8;
-    position: relative;
-    z-index: 1;
 }
 
 .main {
@@ -549,8 +547,6 @@ Projects
 */
 
 #projects {
-    position: relative;
-    z-index: 1;
     min-height: 100vh;
     background-color: #f8f8f8;
 }
@@ -646,9 +642,6 @@ footer
 */
 
 footer {
-    z-index: 0;
-    position: sticky;
-    bottom: 0;
     height: 30vh;
     background-color: #242424;
 }
