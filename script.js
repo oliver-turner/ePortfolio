@@ -1,4 +1,5 @@
-let modalOpen = false;
+
+/* Hamburger Menu functionality */
 
 function toggleBurger() {
     let toggleMenu = document.getElementById("toggle");
@@ -18,6 +19,9 @@ function toggleBurger() {
     });
 }
 
+/* "About Me" modal toggler */
+
+let modalOpen = false;
 function toggleModal() {
     if (modalOpen) {
         modalOpen = false;
@@ -25,4 +29,29 @@ function toggleModal() {
     }
     modalOpen = true;
     document.body.classList += "modalOpen";
+}
+
+/* dark mode/light mode switcher */
+
+const themeSwitch = document.querySelector(".themeSwitch");
+themeSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    }
+    else {
+        localStorage.setItem("theme", "light");
+    }
+    iconUpdate();
+})
+
+function iconUpdate() {
+    if (document.body.classList.contains("dark")) {
+        themeSwitch.querySelector("i").classList.remove("fa-moon");
+        themeSwitch.querySelector("i").classList.add("fa-sun");
+    }
+    else {
+        themeSwitch.querySelector("i").classList.remove("fa-sun");
+        themeSwitch.querySelector("i").classList.add("fa-moon");
+    }
 }

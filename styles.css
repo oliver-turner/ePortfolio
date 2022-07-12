@@ -26,8 +26,8 @@ body{
 }
 
 body.dark{
-    --bgColour: #18044a;
-    --opacity-bg: rgba(0, 0, 0, 0.5);
+    --bgColour: #131213;
+    --opacity-bg: rgba(19, 18, 19, 0.5);
     --textColour: white;
 }
 
