@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --bgColour:#f8f8f8;
     --opacity-bg: rgba(255, 255, 255, 0.5);
@@ -18,19 +22,15 @@
     --inputForm-colour: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body{
     background-color: var(--bgColour);
 }
 
 body.dark{
     --bgColour: #121212;
-    --opacity-bg: rgba(18, 18, 18, 0.5);
+    --opacity-bg: rgba(18, 18, 18, 0.87);
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
-    --textColour: white;
+    --textColour: rgba(255, 255, 255, 0.87);
     --elementBorder-colour: none;
     --inputForm-colour: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -338,10 +338,10 @@ About me
 
 .scrollIcon {
     position: absolute;
+    top: 90%;
+    right: 50%;
     font-weight: 700;
     text-align: center;
-    bottom: 20px;
-    right: 50%;
     transform: translateX(50%);
 }
 
@@ -733,12 +733,6 @@ footer {
 Small Form Factor 
 
 */
-
-@media (max-height:720px) {
-    .scrollIcon {
-        display: none;
-    }
-}
 
 @media (max-width: 950px) {
 
