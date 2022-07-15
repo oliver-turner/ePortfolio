@@ -15,6 +15,7 @@
     --boxShadow: 0 1px 12px rgba(0, 0, 0, 0.5);
     --boxShadow-secondary: 0 10px 12px rgba(0, 0, 0, 0.50);
     --textColour: black;
+    --inputForm-colour: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -26,11 +27,15 @@ body{
 }
 
 body.dark{
-    --bgColour: #131213;
-    --opacity-bg: rgba(19, 18, 19, 0.5);
+    --bgColour: #121212;
+    --opacity-bg: rgba(18, 18, 18, 0.5);
+    --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
     --textColour: white;
+    --elementBorder-colour: none;
+    --inputForm-colour: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+p,
 h1,
 h2,
 h3,
@@ -201,7 +206,7 @@ nav {
     position: relative;
     width: 100%;
     height: 3px;
-    background: black;
+    background: var(--textColour);
 }
 
 .hamburgerMenu .hamburger .bar::before,
@@ -211,7 +216,7 @@ nav {
     top: -10px;
     width: 100%;
     height: 3px;
-    background: black;
+    background: var(--textColour);
     transition: transform 0.2s linear;
 }
 
@@ -322,6 +327,7 @@ About me
     font-size: large;
     box-shadow: var(--boxShadow-secondary);
     cursor: pointer;
+    color: var(--textColour);
 }
 
 .button__aboutMe:hover,
@@ -424,6 +430,7 @@ About me
 
 .formItem__label {
     display: block;
+    color: var(--textColour);
 }
 
 .formItem {
@@ -433,8 +440,9 @@ About me
 .input {
     width: 100%;
     background-color: transparent;
+    color: var(--textColour);
     outline: none;
-    border: var(--elementBorder-colour);
+    border: var(--inputForm-colour);
     border-left: none;
     border-right: none;
     border-top: none;
@@ -453,6 +461,7 @@ About me
     border: var(--elementBorder-colour);
     font-size: large;
     box-shadow: var(--boxShadow-secondary);
+    color: var(--textColour);
     cursor: pointer;
 }
 

@@ -28,7 +28,7 @@ function toggleModal() {
         return document.body.classList.remove("modalOpen");
     }
     modalOpen = true;
-    document.body.classList += "modalOpen";
+    document.body.classList.toggle("modalOpen");
 }
 
 /* dark mode/light mode switcher */
