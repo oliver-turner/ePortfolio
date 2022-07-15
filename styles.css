@@ -51,10 +51,12 @@ h2 {
     font-weight: 500;
 }
 
+
 p {
     line-height: 1.5;
     font-style: 20px;
 }
+
 
 textarea {
     height: 75px;
@@ -165,6 +167,7 @@ nav {
     text-decoration: none;
     transition: all 0.3s ease;
     opacity: 0;
+    cursor: pointer;
 }
 
 .hamburgerMenu {
