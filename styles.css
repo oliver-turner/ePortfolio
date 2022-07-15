@@ -14,10 +14,12 @@ html {
 :root{
     --bgColour:#f8f8f8;
     --opacity-bg: rgba(255, 255, 255, 0.5);
+    --burgerMenu-bg: #f8f8f8;
     --externalBorder-colour: 1px solid rgba(255, 255, 255, 0.3);
-    --elementBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
+    --elementBorder-colour: 1px solid rgba(248, 248, 248, 0.3);
     --boxShadow: 0 1px 12px rgba(0, 0, 0, 0.5);
-    --boxShadow-secondary: 0 10px 12px rgba(0, 0, 0, 0.50);
+    --boxShadow-secondary: 3px 3px 3px #808080, -3px -3px 3px #e2e2e2;
+    --boxShadow-secondaryHover: 3px 3px 3px #f8f8f8, inset 3px 3px 3px #808080;
     --textColour: black;
     --inputForm-colour: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -27,12 +29,16 @@ body{
 }
 
 body.dark{
-    --bgColour: #121212;
-    --opacity-bg: rgba(18, 18, 18, 0.87);
+    --bgColour: #242424;
+    --opacity-bg: rgba(36, 36, 36, 0.871);
+    --burgerMenu-bg: #383838;
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
     --textColour: rgba(255, 255, 255, 0.87);
-    --elementBorder-colour: none;
+    --elementBorder-colour: 1px solid #242424;
     --inputForm-colour: 1px solid rgba(255, 255, 255, 0.5);
+    --boxShadow-secondary: inset 3px 3px 3px #2f2f2f, inset -3px -3px 3px #121212; 
+    --boxShadow-secondaryHover: inset 3px 3px 3px #121212, inset -3px -3px 3px #242424;
+    --boxShadow: 0 1px 12px rgba(0, 0, 0, 0.5);
 }
 
 p,
@@ -166,7 +172,7 @@ nav {
     font-size: 20px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background-color: var(--opacity-bg);
+    background-color: var(--burgerMenu-bg);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     border: var(--externalBorder-colour);
     text-decoration: none;
@@ -333,7 +339,7 @@ About me
 .button__aboutMe:hover,
 .burgerMenu a:hover,
 .formSubmit:hover {
-    box-shadow: inset var(--boxShadow);
+    box-shadow: var(--boxShadow-secondaryHover);
 }
 
 .scrollIcon {
