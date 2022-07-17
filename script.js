@@ -1,4 +1,3 @@
-
 /* Hamburger Menu functionality */
 
 function toggleBurger() {
