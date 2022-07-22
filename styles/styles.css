@@ -342,15 +342,11 @@ About me
     box-shadow: var(--boxShadow-secondaryHover);
 }
 
-.scrollIcon {
-    position: absolute;
-    top: 90%;
-    right: 50%;
-    font-weight: 700;
-    text-align: center;
-    transform: translateX(50%);
-}
 
+.scrollIcon {
+    text-align: center;
+    transform: translateY(-100px);
+}
 
 .wrapper {
     display: flex;
@@ -781,6 +777,10 @@ Small Form Factor
     .main {
         flex-direction: column-reverse;
         justify-content: flex-end;
+    }
+
+    .scrollIcon{
+        transform: translateY(0);
     }
 
     .modal {
