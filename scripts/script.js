@@ -44,6 +44,21 @@ themeSwitch.addEventListener("click", () => {
     iconUpdate();
 })
 
+/* check which theme is active */
+
+function isThemeActive(){
+    if(localStorage.getItem("theme")!= null){
+        if(localStorage.getItem("theme") == "light"){
+            document.body.classList.remove("dark");
+        }
+        else{
+            document.body.classList.add("dark");
+        }
+    }      
+    iconUpdate();
+}
+isThemeActive();
+
 function iconUpdate() {
     if (document.body.classList.contains("dark")) {
         themeSwitch.querySelector("i").classList.remove("fa-moon");
