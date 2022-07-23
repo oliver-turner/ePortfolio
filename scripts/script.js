@@ -69,3 +69,16 @@ function iconUpdate() {
         themeSwitch.querySelector("i").classList.add("fa-moon");
     }
 }
+
+/* Contact Me Email Functionality */
+
+function mailSelf() {
+    event.preventDefault();
+    emailjs
+        .sendForm(
+            "service_p1sroe1", 
+            "template_kjcxnpn",
+            event.target,
+            "XxhjlyCJzj1zuaixd"
+        )
+}
