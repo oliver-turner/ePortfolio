@@ -46,15 +46,15 @@ themeSwitch.addEventListener("click", () => {
 
 /* check which theme is active */
 
-function isThemeActive(){
-    if(localStorage.getItem("theme")!= null){
-        if(localStorage.getItem("theme") == "light"){
+function isThemeActive() {
+    if (localStorage.getItem("theme") != null) {
+        if (localStorage.getItem("theme") == "light") {
             document.body.classList.remove("dark");
         }
-        else{
+        else {
             document.body.classList.add("dark");
         }
-    }      
+    }
     iconUpdate();
 }
 isThemeActive();
@@ -74,11 +74,30 @@ function iconUpdate() {
 
 function mailSelf(event) {
     event.preventDefault();
+    const contactModal = document.querySelector(".modal__contactMe");
+    const pending = document.querySelector(".overlayPending");
+    const success = document.querySelector(".overlaySuccess");
+    /* hide contact me form and display pending icon */
+    contactModal.style.display = "none";
+    pending.classList += " overlayVisible";
+    /* send email through email.js */
     emailjs
         .sendForm(
-            "service_p1sroe1", 
+            "service_p1sroe1",
             "template_kjcxnpn",
             event.target,
             "XxhjlyCJzj1zuaixd"
         )
+        /* if successful remove pending icon and display success message */
+        .then(() => {
+            pending.classList.remove("overlayVisible");
+            success.classList += " overlayVisible";
+        })
+        /* if unsuccessful remove pending icon and display error message */
+        .catch(() => {
+            pending.classList.remove("overlayVisible");
+            alert(
+                "Email service is unavailable at this time :("
+            );
+        });
 }
