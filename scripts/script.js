@@ -72,7 +72,7 @@ function iconUpdate() {
 
 /* Contact Me Email Functionality */
 
-function mailSelf() {
+function mailSelf(event) {
     event.preventDefault();
     emailjs
         .sendForm(
