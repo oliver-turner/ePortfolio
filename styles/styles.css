@@ -612,7 +612,7 @@ Projects
 }
 
 .project {
-    margin-bottom: 135px;
+    padding: 0 25px;
 }
 
 .project:last-child {
@@ -626,10 +626,11 @@ Projects
 
 .project__wrapper {
     display: flex;
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.45);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    width: 75vw;
 }
 
 .project__wrapper:before {
@@ -660,7 +661,9 @@ Projects
 }
 
 .project__list {
-    padding-top: 40px;
+    overflow-x: scroll;
+    margin: 100px 0;
+    display: flex;
 }
 
 .project__description {
