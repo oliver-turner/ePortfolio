@@ -13,6 +13,7 @@ html {
 
 :root {
     --bgColour: #f8f8f8;
+    --bgColour-footer: #242424;
     --opacity-bg: rgba(255, 255, 255, 0.5);
     --burgerMenu-bg: #f8f8f8;
     --externalBorder-colour: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,6 +31,7 @@ body {
 
 body.dark {
     --bgColour: #242424;
+    --bgColour-footer: #f8f8f8;
     --opacity-bg: rgba(36, 36, 36, 0.871);
     --burgerMenu-bg: #383838;
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
@@ -467,7 +469,7 @@ About me
     cursor: pointer;
 }
 
-.overlay{
+.overlay {
     display: none;
     z-index: -1;
     width: 100%;
@@ -478,15 +480,15 @@ About me
     color: var(--textColour);
 }
 
-.overlayPending{
+.overlayPending {
     font-size: 80px;
 }
 
-.overlaySuccess{
+.overlaySuccess {
     font-size: 40px;
 }
 
-.overlayVisible{
+.overlayVisible {
     display: flex;
     z-index: 5;
 }
@@ -663,6 +665,7 @@ Projects
     scroll-padding: 0 200px;
     margin: 100px 0;
     display: flex;
+    padding-bottom: 50px;
 }
 
 .project__description {
@@ -705,7 +708,7 @@ footer
 
 footer {
     height: 300px;
-    background-color: #242424;
+    background-color: var(--bgColour-footer);
 }
 
 
@@ -723,7 +726,6 @@ footer {
     justify-content: center;
     padding: 8% 0;
     height: 100%;
-
 }
 
 .footer__logo--image {
@@ -734,7 +736,7 @@ footer {
 .footer__social--link,
 .footer__copyright,
 .footer__logo--popper {
-    color: #fff;
+    color: var(--bgColour);
 }
 
 .footer__logo--popper {
@@ -844,6 +846,10 @@ Small Form Factor
         left: 30px;
         padding-right: 30px;
     }
+
+    .project__wrapper {
+        min-width: 500px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -868,7 +874,7 @@ Small Form Factor
     }
 
     .project__description--title {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 1;
         text-align: center;
     }
@@ -876,5 +882,9 @@ Small Form Factor
     .project__description--sub-title {
         text-align: center;
         margin: 12px 0;
+    }
+
+    .project__wrapper {
+        min-width: 250px;
     }
 }
