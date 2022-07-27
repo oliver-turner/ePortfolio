@@ -615,10 +615,6 @@ Projects
     padding: 0 25px;
 }
 
-.project:last-child {
-    margin-bottom: 40px;
-}
-
 .project__img {
     width: 100%;
     transition: all 500ms ease;
@@ -630,8 +626,8 @@ Projects
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    width: 70vw;
     scroll-snap-align: start;
+    min-width: 750px;
 }
 
 .project__wrapper:before {
@@ -664,7 +660,7 @@ Projects
 .project__list {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 75px;
+    scroll-padding: 0 200px;
     margin: 100px 0;
     display: flex;
 }
