@@ -629,7 +629,7 @@ Projects
     overflow: hidden;
     position: relative;
     scroll-snap-align: start;
-    min-width: 750px;
+    width: 700px
 }
 
 .project__wrapper:before {
@@ -660,11 +660,11 @@ Projects
 }
 
 .project__list {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 200px;
-    margin: 100px 0;
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0 50px;
     padding-bottom: 50px;
 }
 
@@ -698,6 +698,31 @@ Projects
 .project__description--link {
     text-align: left;
     color: #fff;
+}
+
+.slider{
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 5px 0;
+}
+
+.slides a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 40px;
+    height: 40px;
+    background: var(--bgColour-footer);
+    color: var(--bgColour);
+    border-radius: 50%;
 }
 
 /* 
