@@ -713,18 +713,6 @@ Projects
     margin: 50px 0 5px 0;
 }
 
-.slides a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    width: 40px;
-    height: 40px;
-    background: var(--bgColour-footer);
-    color: var(--bgColour);
-    border-radius: 50%;
-}
-
 /* 
 
 footer 
