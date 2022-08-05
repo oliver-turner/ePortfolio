@@ -613,6 +613,35 @@ Projects
     min-height: 100vh;
 }
 
+.projectSlider {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    position: absolute;
+    width: 850px;
+}
+
+.project__wrapper{
+    width: 100%;
+}
+
+.project__img{
+    width: 100%;
+}
+
+.project__description {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+
+/*
+
 .project {
     padding: 0 25px;
 }
@@ -700,18 +729,20 @@ Projects
     color: #fff;
 }
 
-.slider{
-    width: 800px;
+.slider {
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.slides{
+.slides {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 50px 0 5px 0;
 }
+
+*/
 
 /* 
 
