@@ -101,3 +101,28 @@ function mailSelf(event) {
             );
         });
 }
+
+var project = document.querySelectorAll('.project');
+var btns = document.querySelectorAll('.btn');
+let currentSlide = 1;
+
+// Javascript for image slider manual navigation
+var manualNav = function(manual){
+  project.forEach((project) => {
+    project.classList.remove('active');
+
+    btns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+  });
+
+  project[manual].classList.add('active');
+  btns[manual].classList.add('active');
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualNav(i);
+    currentSlide = i;
+  });
+});
