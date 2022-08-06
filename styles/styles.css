@@ -654,11 +654,13 @@ Projects
     position: absolute;
     z-index: 1;
     width: 850px;
+    height: 600px;
     border-radius: 20px;
 }
 
 .project__wrapper {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -666,6 +668,7 @@ Projects
 .project__img {
     z-index: 1;
     width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
