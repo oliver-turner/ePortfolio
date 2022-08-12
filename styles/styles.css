@@ -31,7 +31,6 @@ body {
 
 body.dark {
     --bgColour: #242424;
-    --bgColour-footer: #f8f8f8;
     --opacity-bg: rgba(36, 36, 36, 0.871);
     --burgerMenu-bg: #383838;
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
@@ -770,7 +769,7 @@ footer {
 .footer__social--link,
 .footer__copyright,
 .footer__logo--popper {
-    color: var(--bgColour);
+    color: #fff;
 }
 
 .footer__logo--popper {
