@@ -1,4 +1,4 @@
-/* Hamburger Menu functionality */
+/* Hamburger Menu functionality  */
 
 function toggleBurger() {
     let toggleMenu = document.getElementById("toggle");
