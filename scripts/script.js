@@ -102,27 +102,47 @@ function mailSelf(event) {
         });
 }
 
-var project = document.querySelectorAll('.project');
-var btns = document.querySelectorAll('.btn');
-let currentSlide = 1;
+const project = document.querySelectorAll('.project');
+const btns = document.querySelectorAll('.btn');
+const nextButton = document.querySelector(".sliderButton.next");
+const prevButton = document.querySelector(".sliderButton.prev");
+const numberOfSlides = project.length;
+var slideIndex = 0;
 
-// Javascript for image slider manual navigation
-var manualNav = function(manual){
-  project.forEach((project) => {
-    project.classList.remove('active');
-
-    btns.forEach((btn) => {
-      btn.classList.remove('active');
+//next button functionality 
+nextButton.addEventListener("click", () => {
+    project.forEach((project) => {
+        project.classList.remove("active");
     });
-  });
+    btns.forEach((btns) => {
+        btns.classList.remove("active");
+    });
 
-  project[manual].classList.add('active');
-  btns[manual].classList.add('active');
-}
+    slideIndex++;
 
-btns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    manualNav(i);
-    currentSlide = i;
-  });
+    if (slideIndex > (numberOfSlides - 1)) {
+        slideIndex = 0;
+    }
+
+    project[slideIndex].classList.add("active");
+    btns[slideIndex].classList.add("active");
+});
+
+//previous button functionality
+prevButton.addEventListener("click", () => {
+    project.forEach((project) => {
+        project.classList.remove("active");
+    });
+    btns.forEach((btns) => {
+        btns.classList.remove("active");
+    });
+
+    slideIndex--;
+
+    if (slideIndex < 0) {
+        slideIndex = numberOfSlides - 1;
+    }
+
+    project[slideIndex].classList.add("active");
+    btns[slideIndex].classList.add("active");
 });
