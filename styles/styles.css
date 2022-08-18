@@ -734,7 +734,7 @@ Projects
     color: #fff;
 }
 
-.sliderButton-container{
+.sliderButton-container {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -744,12 +744,30 @@ Projects
 }
 
 .sliderButton {
+    cursor: pointer;
     padding: 25px;
     z-index: 10;
     background: none;
     border: none;
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: rgb(28, 29, 37, 0.2);
+    transition: all 300ms ease;
+}
+
+.sliderButton.prev:hover,
+.sliderButton.next:hover {
+    background-color: rgb(28, 29, 37, 0.7);
     font-size: 50px;
 }
+
+.x {
+    position: absolute;
+    width: 850px;
+    height: 600px;
+}
+
+
 
 /* 
 
