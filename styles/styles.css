@@ -619,15 +619,21 @@ Projects
     justify-content: center;
 }
 
+
 .navigation {
-    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 25px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .project.active {
     z-index: 5;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
 }
 
 .btn.active {
@@ -640,13 +646,7 @@ Projects
     height: 12px;
     margin: 10px;
     border-radius: 50%;
-    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.btn:hover {
-    transform: scale(1.5);
-    transition: transform 200ms ease;
 }
 
 .project {
@@ -750,7 +750,7 @@ Projects
     background: none;
     border: none;
     font-size: 40px;
-    border-radius: 15px;
+    border-radius: 20px;
     transition: all 300ms ease;
 }
 
@@ -760,13 +760,13 @@ Projects
     font-size: 50px;
 }
 
-.x {
+.projectNav-wrapper {
     position: absolute;
     width: 850px;
     height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* 
 
