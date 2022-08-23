@@ -127,24 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal__contactMe">
-                    <h1>Contact Me!</h1>
-                    <form onsubmit="mailSelf(event)" id="contactMe__form">
-                        <div class="formItem">
-                            <label class="formItem__label">Name</label>
-                            <input type="text" name="userName" class="input" required>
-                        </div>
-                        <div class="formItem">
-                            <label class="formItem__label">Email</label>
-                            <input type="email" class="input" name="userEmail" required>
-                        </div>
-                        <div class="formItem">
-                            <label class="formItem__label">Message</label>
-                            <textarea name="message" class="input" type="text" required></textarea>
-                        </div>
-                        <button id="contactMe__submit" class="formSubmit">Send Message</button>
-                    </form>
-                </div>
+
                 <div class="overlay overlayPending">
                     <i class="fas fa-spinner"></i>
                 </div>
@@ -255,8 +238,34 @@
         </div>
     </section>
 
-    <!--To Be Changed-->
+    <footer>
+        <div class="gridWrapper">
+            <div class="modal__contactMe">
+                <h1>Contact Me!</h1>
+                <form onsubmit="mailSelf(event)" id="contactMe__form">
+                    <div class="formItem">
+                        <label class="formItem__label">Name</label>
+                        <input type="text" name="userName" class="input" required>
+                    </div>
+                    <div class="formItem">
+                        <label class="formItem__label">Email</label>
+                        <input type="email" class="input" name="userEmail" required>
+                    </div>
+                    <div class="formItem">
+                        <label class="formItem__label">Message</label>
+                        <textarea name="message" class="input" type="text" required></textarea>
+                    </div>
+                    <button id="contactMe__submit" class="formSubmit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 
+
+
+
+
+    <!-- To Be Changed
     <footer>
         <div class="row footer__row">
             <a href="#" class="footer__anchor">
@@ -288,6 +297,8 @@
             <div class="footer__copyright">Copyright © Oliver Turner 2022</div>
         </div>
     </footer>
+    -->
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
