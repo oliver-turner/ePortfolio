@@ -31,6 +31,7 @@ body {
 
 body.dark {
     --bgColour: #242424;
+    --bgColour-footer: #1b1b1b;
     --opacity-bg: rgba(36, 36, 36, 0.871);
     --burgerMenu-bg: #383838;
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
@@ -60,7 +61,6 @@ h1 {
 
 h2 {
     font-size: 24px;
-    font-weight: 500;
 }
 
 
@@ -338,8 +338,7 @@ About me
 }
 
 .button__aboutMe:hover,
-.burgerMenu a:hover,
-.formSubmit:hover {
+.burgerMenu a:hover {
     box-shadow: var(--boxShadow-secondaryHover);
 }
 
@@ -428,43 +427,6 @@ About me
 
 .modal h3 {
     margin: 20px 0;
-}
-
-.formItem__label {
-    display: block;
-    color: var(--textColour);
-}
-
-.formItem {
-    margin: 10px 0;
-}
-
-.input {
-    width: 100%;
-    background-color: transparent;
-    color: var(--textColour);
-    outline: none;
-    border: var(--inputForm-colour);
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    transition: all 300ms ease;
-}
-
-.input:focus {
-    border-color: red;
-}
-
-.formSubmit {
-    width: 100%;
-    padding: 10px 10px;
-    border-radius: 15px;
-    background-color: transparent;
-    border: var(--elementBorder-colour);
-    font-size: large;
-    box-shadow: var(--boxShadow-secondary);
-    color: var(--textColour);
-    cursor: pointer;
 }
 
 .overlay {
@@ -770,25 +732,14 @@ footer
 
 */
 
+footer h2 {
+    color: rgba(255, 255, 255, 0.87);
+}
+
 footer {
     min-height: 500px;
+    padding-top: 50px;
     background-color: var(--bgColour-footer);
-}
-
-.footer__social--list {
-    width: 75%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 28px;
-}
-
-.footer__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8% 0;
-    height: 100%;
 }
 
 .footer__logo--image {
@@ -832,24 +783,86 @@ footer {
     width: 50%;
 }
 
-.footer__links{
+.footer__links {
     display: flex;
     flex-direction: column;
 }
 
-.footer__socialLinks{
+.footer__brand {
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.footer__socialLinks {
     margin-bottom: 10%;
 }
 
-.footer__links{
+.footer__links {
     display: flex;
     justify-content: space-between
 }
 
-.footer__link{
+.footer__link {
     margin: 10px;
+    font-size: 28px;
     color: red;
-    font-size: 2em;
+}
+
+.footer__link:hover {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.contactMe h2{
+    font-size: 35px;
+}
+
+.formItem__label {
+    display: block;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.formItem {
+    margin: 10px 0;
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: all 300ms ease;
+}
+
+.input:focus {
+    border-color: red;
+}
+
+.formSubmit {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #242424;
+    font-size: large;
+    box-shadow: inset 3px 3px 3px #2f2f2f, inset -3px -3px 3px #121212;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: pointer;
+}
+
+.formSubmit:hover{
+    box-shadow: inset 3px 3px 3px #121212, inset -3px -3px 3px #242424;
+}
+
+.footer__copyright {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
 }
 
 /* 
