@@ -393,8 +393,7 @@ About me
     justify-content: space-around;
 }
 
-.modal__techStack,
-.modal__contactMe {
+.modal__techStack {
     width: 100%;
 }
 
@@ -772,7 +771,7 @@ footer
 */
 
 footer {
-    height: 300px;
+    min-height: 500px;
     background-color: var(--bgColour-footer);
 }
 
@@ -805,7 +804,7 @@ footer {
 
 .footer__logo--popper {
     position: absolute;
-    right: 0;
+    left: 20px;
     top: 30px;
     font-weight: 700;
     opacity: 0;
@@ -820,6 +819,37 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(40px);
     opacity: 1;
+}
+
+.footerGrid {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links,
+.contactMe {
+    width: 50%;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__socialLinks{
+    margin-bottom: 10%;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: space-between
+}
+
+.footer__link{
+    margin: 10px;
+    color: red;
+    font-size: 2em;
 }
 
 /* 
