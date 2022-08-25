@@ -577,7 +577,7 @@ Projects
 
 .projectSlider {
     position: relative;
-    min-height: 100vh;
+    min-height: 700px;
     display: flex;
     justify-content: center;
 }
@@ -991,6 +991,10 @@ Small Form Factor
         font-size: 30px;
     }
 
+    .projectSlider{
+        min-height: 350px;
+    }
+
     .projectNav-wrapper,
     .project {
         width: 500px;
@@ -1020,6 +1024,10 @@ Small Form Factor
 
     h2 {
         font-size: 18px;
+    }
+
+    .projectSlider{
+        min-height: 250px;
     }
 
     .project__description {
