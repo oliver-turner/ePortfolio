@@ -744,7 +744,7 @@ footer {
     background-color: var(--bgColour-footer);
 }
 
-.footer__logo--wrapper{
+.footer__logo--wrapper {
     width: 50px;
 }
 
@@ -818,7 +818,7 @@ footer {
     color: rgba(255, 255, 255, 0.87);
 }
 
-.contactMe h2{
+.contactMe h2 {
     font-size: 35px;
 }
 
@@ -859,7 +859,7 @@ footer {
     cursor: pointer;
 }
 
-.formSubmit:hover{
+.formSubmit:hover {
     box-shadow: inset 3px 3px 3px #121212, inset -3px -3px 3px #242424;
 }
 
@@ -964,31 +964,61 @@ Small Form Factor
         min-width: 500px;
     }
 
-    .footerGrid{
+    .footerGrid {
         flex-direction: column;
     }
 
-    .footer__links{
+    .footer__links {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer__logo--wrapper{
+    .footer__logo--wrapper {
         margin: 0 auto;
     }
 
-    .footer__brand{
+    .footer__brand {
         padding: 30px 0;
     }
 
     .footer__links,
-    .contactMe{
+    .contactMe {
         width: 100%;
     }
 
-    .contactMe h2{
+    .contactMe h2 {
         font-size: 25px;
         text-align: center;
+    }
+
+
+
+    .section__title {
+        font-size: 30px;
+    }
+
+    .projectNav-wrapper,
+    .project {
+        width: 300px;
+        height: 250px;
+    }
+
+    .sliderButton{
+        font-size: 20px;
+    }
+
+    .sliderButton.prev:hover,
+    .sliderButton.next:hover{
+        font-size: 25px;
+    }
+
+    .navigation{
+        padding-top: 10px;
+    }
+
+    .btn{
+        width: 8px;
+        height: 8px;
     }
 }
 
