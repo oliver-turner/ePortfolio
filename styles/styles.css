@@ -893,7 +893,6 @@ Small Form Factor
         padding-top: 0;
     }
 
-
     nav,
     .header {
         height: 68px;
@@ -956,12 +955,9 @@ Small Form Factor
     }
 
     .project__description {
+        top: 20%;
         left: 30px;
         padding-right: 30px;
-    }
-
-    .project__wrapper {
-        min-width: 500px;
     }
 
     .footerGrid {
@@ -991,32 +987,30 @@ Small Form Factor
         text-align: center;
     }
 
-
-
     .section__title {
         font-size: 30px;
     }
 
     .projectNav-wrapper,
     .project {
-        width: 300px;
-        height: 250px;
+        width: 500px;
+        height: 350px;
     }
 
-    .sliderButton{
+    .sliderButton {
         font-size: 20px;
     }
 
     .sliderButton.prev:hover,
-    .sliderButton.next:hover{
+    .sliderButton.next:hover {
         font-size: 25px;
     }
 
-    .navigation{
+    .navigation {
         padding-top: 10px;
     }
 
-    .btn{
+    .btn {
         width: 8px;
         height: 8px;
     }
@@ -1031,6 +1025,7 @@ Small Form Factor
     .project__description {
         padding: 0;
         left: 0;
+        top: 25%;
         width: 100%;
     }
 
@@ -1054,7 +1049,9 @@ Small Form Factor
         margin: 12px 0;
     }
 
-    .project__wrapper {
-        min-width: 250px;
+    .projectNav-wrapper,
+    .project {
+        width: 350px;
+        height: 250px;
     }
 }
