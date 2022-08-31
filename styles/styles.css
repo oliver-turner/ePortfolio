@@ -15,6 +15,7 @@ html {
     --bgColour: #f8f8f8;
     --bgColour-footer: #242424;
     --opacity-bg: rgba(255, 255, 255, 0.5);
+    --brandLogo__colour: invert(0%);
     --burgerMenu-bg: #f8f8f8;
     --externalBorder-colour: 1px solid rgba(255, 255, 255, 0.3);
     --elementBorder-colour: 1px solid rgba(248, 248, 248, 0.3);
@@ -33,6 +34,7 @@ body.dark {
     --bgColour: #242424;
     --bgColour-footer: #1b1b1b;
     --opacity-bg: rgba(36, 36, 36, 0.871);
+    --brandLogo__colour: invert(100%);
     --burgerMenu-bg: #383838;
     --externalBorder-colour: 1px solid rgba(0, 0, 0, 0.3);
     --textColour: rgba(255, 255, 255, 0.87);
@@ -160,6 +162,11 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    width: 100px;
+    filter: var(--brandLogo__colour);
 }
 
 .burgerMenu a {
@@ -749,8 +756,8 @@ footer {
 }
 
 .footer__logo--image {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 
 .footer__social--link,
@@ -774,7 +781,7 @@ footer {
 }
 
 .footer__anchor:hover .footer__logo--popper {
-    transform: translateX(40px);
+    transform: translateX(60px);
     opacity: 1;
 }
 
@@ -898,6 +905,10 @@ Small Form Factor
         height: 68px;
     }
 
+    .logo {
+        width: 50px;
+    }
+
     .about-me__picture--mask {
         width: 200px;
         height: 200px;
@@ -991,7 +1002,7 @@ Small Form Factor
         font-size: 30px;
     }
 
-    .projectSlider{
+    .projectSlider {
         min-height: 350px;
     }
 
@@ -1026,7 +1037,7 @@ Small Form Factor
         font-size: 18px;
     }
 
-    .projectSlider{
+    .projectSlider {
         min-height: 250px;
     }
 
