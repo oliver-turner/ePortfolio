@@ -757,7 +757,8 @@ footer {
 
 .footer__logo--image {
     width: 100px;
-    height: 100px;
+    filter: invert(100%);
+    transform: translateX(-30px);
 }
 
 .footer__social--link,
@@ -769,7 +770,7 @@ footer {
 .footer__logo--popper {
     position: absolute;
     left: 20px;
-    top: 30px;
+    top: 40px;
     font-weight: 700;
     opacity: 0;
     transition: all 300ms ease;
