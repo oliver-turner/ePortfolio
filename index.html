@@ -127,6 +127,7 @@
                         </div>
                     </div>
                 </div>
+                <i class="fa fa-times modalExit" onclick="toggleModal()"></i>
             </div>
         </div>
     </section>
@@ -261,7 +262,7 @@
                 </div>
                 <div class="contactMe">
                     <h2>Connect With Me!</h2>
-                    <form onsubmit="mailSelf(event)" id="contactMe__form">
+                    <form onsubmit="mailSelf(event)" id="contactMe__form" class="contactMe__form">
                         <div class="formItem">
                             <label class="formItem__label">Name</label>
                             <input type="text" name="userName" class="input" required>
@@ -282,7 +283,6 @@
                     <div class=" overlay overlaySuccess">
                         Thanks for the message!
                     </div>
-                    <i class="fa fa-times modalExit" onclick="toggleModal()"></i>
                 </div>
             </div>
             <div class="footer__copyright">Copyright © Oliver Turner 2022</div>
