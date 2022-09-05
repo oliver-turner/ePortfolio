@@ -86,6 +86,11 @@ a {
     font-size: 25px;
 }
 
+canvas {
+    position: absolute;
+    z-index: 0;
+}
+
 .link__hover-effect:after {
     content: "";
     position: absolute;
