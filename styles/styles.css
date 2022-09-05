@@ -912,10 +912,12 @@ footer {
 }
 
 .overlayPending {
+    padding: 25px;
     font-size: 80px;
 }
 
 .overlaySuccess {
+    padding: 25px;
     font-size: 40px;
 }
 
