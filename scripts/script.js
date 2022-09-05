@@ -74,7 +74,7 @@ function iconUpdate() {
 
 function mailSelf(event) {
     event.preventDefault();
-    const contactModal = document.querySelector(".modal__contactMe");
+    const contactModal = document.querySelector(".contactMe__form");
     const pending = document.querySelector(".overlayPending");
     const success = document.querySelector(".overlaySuccess");
     /* hide contact me form and display pending icon */

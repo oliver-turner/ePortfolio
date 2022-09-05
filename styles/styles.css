@@ -770,7 +770,7 @@ footer {
 .footer__logo--popper {
     position: absolute;
     left: 20px;
-    top: 40px;
+    bottom: 30px;
     font-weight: 700;
     opacity: 0;
     transition: all 300ms ease;
@@ -828,6 +828,7 @@ footer {
 
 .contactMe h2 {
     font-size: 35px;
+    text-align: center;
 }
 
 .formItem__label {
@@ -873,7 +874,7 @@ footer {
 
 .footer__copyright {
     margin-top: 50px;
-    padding-top: 25px;
+    padding: 25px 0;
     border-top: 1px solid white;
     display: flex;
     justify-content: center;
