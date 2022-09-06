@@ -339,7 +339,7 @@ About me
 
 .button__aboutMe {
     width: 150px;
-    padding: 10px 10px;
+    padding: 10px 35px;
     border-radius: 15px;
     background-color: transparent;
     border: var(--elementBorder-colour);
