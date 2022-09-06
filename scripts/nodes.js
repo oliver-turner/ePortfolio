@@ -34,7 +34,7 @@ function draw() {
     for (var i = 0, x = nodes.length; i < x; i++) {
         var s = nodes[i];
 
-        ctx.fillStyle = getComputedStyle(nodes).getPropertyValue("--textColour");
+        ctx.fillStyle = getComputedStyle(canvas).getPropertyValue("--textColour"); 
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
         ctx.fill();
@@ -55,7 +55,7 @@ function draw() {
         }
     }
     ctx.lineWidth = 0.1;
-    ctx.strokeStyle = getComputedStyle(nodes).getPropertyValue("--textColour");
+    ctx.strokeStyle = getComputedStyle(canvas).getPropertyValue("--textColour");
     ctx.stroke();
 }
 
