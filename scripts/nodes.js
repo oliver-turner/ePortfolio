@@ -1,16 +1,31 @@
 var canvas = document.getElementById("nodes"),
     ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
+canvas.width = window.innerWidth - 17;
 canvas.height = window.innerHeight;
 
+/* on change of window resize canvas */
+
+window.onresize = function () {
+    W = window.innerWidth - 17;
+    H = window.innerHeight;
+    canvas.width = W;
+    canvas.height = H;
+}
+
 var nodes = [], // Array of nodes
-    FPS = 60,
-    x = 100,
-    mouse = {
-        x: 0,
-        y: 0
-    };  // mouse location
+    FPS = 60;
+if (canvas.width > 1250) { //number of nodes based on width of screen
+    x = 100;
+} else if (canvas.width > 768) {
+    x = 50;
+} else {
+    x = 25;
+}
+mouse = {
+    x: 0,
+    y: 0
+};  // mouse location
 
 /* Push nodes to array */
 
@@ -34,7 +49,7 @@ function draw() {
     for (var i = 0, x = nodes.length; i < x; i++) {
         var s = nodes[i];
 
-        ctx.fillStyle = getComputedStyle(canvas).getPropertyValue("--textColour"); 
+        ctx.fillStyle = getComputedStyle(canvas).getPropertyValue("--textColour");
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
         ctx.fill();
