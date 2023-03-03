@@ -640,19 +640,44 @@ Projects
     border-radius: 20px;
 }
 
-@media (hover:hover) {
+.project .project__description {
+    opacity: 1;
+}
+
+.project .project__wrapper:before {
+    opacity: 0.5;
+}
+
+@media (hover) {
+    .project:hover .project__img {
+        filter: blur(3px);
+    }
+
+    .project .project__wrapper:before {
+        opacity: 0;
+    }
 
     .project:hover .project__wrapper:before {
         opacity: 0.7;
     }
 
-    .project:hover .project__img {
-        filter: blur(3px);
+    .project .project__description {
+        opacity: 0;
     }
 
     .project:hover .project__description {
         opacity: 1;
     }
+
+    .sliderButton.prev:hover,
+    .sliderButton.next:hover {
+        background-color: rgb(28, 29, 37, 0.7);
+        font-size: 50px;
+    }
+}
+
+.project .project__img {
+    filter: blur(1px);
 }
 
 .project__description {
@@ -661,7 +686,7 @@ Projects
     left: 90px;
     max-width: 550px;
     z-index: 3;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 300ms;
 }
 
@@ -674,8 +699,8 @@ Projects
 }
 
 .project__description--link {
-    font-style: 20px;
-    margin-right: 16px;
+    font-size: 25px;
+    padding: 5px;
 }
 
 .project__description--title,
@@ -704,15 +729,6 @@ Projects
     font-size: 40px;
     border-radius: 20px;
     transition: all 300ms ease;
-}
-
-@media (hover:hover) {
-
-    .sliderButton.prev:hover,
-    .sliderButton.next:hover {
-        background-color: rgb(28, 29, 37, 0.7);
-        font-size: 50px;
-    }
 }
 
 .projectNav-wrapper {
@@ -1029,16 +1045,6 @@ Small Form Factor
         width: calc(100% / 3);
     }
 
-    .project__description--para {
-        font-size: 14px;
-    }
-
-    .project__description {
-        top: 20%;
-        left: 30px;
-        padding-right: 30px;
-    }
-
     .footerGrid {
         flex-direction: column;
     }
@@ -1080,13 +1086,18 @@ Small Form Factor
         height: 350px;
     }
 
-    .sliderButton {
-        font-size: 20px;
+    .project__description {
+        top: 60%;
+        left: 30px;
     }
 
-    .sliderButton.prev:hover,
-    .sliderButton.next:hover {
+    .project__description--para {
+        display: none;
+    }
+
+    .sliderButton {
         font-size: 25px;
+        color: rgb(0, 0, 0);
     }
 
     .navigation {
@@ -1112,12 +1123,9 @@ Small Form Factor
     .project__description {
         padding: 0;
         left: 0;
-        top: 25%;
+        top: 70%;
         width: 100%;
-    }
-
-    .project__description--para {
-        display: none;
+        font-size: 20px;
     }
 
     .project__description--links {
@@ -1126,14 +1134,12 @@ Small Form Factor
     }
 
     .project__description--title {
-        font-size: 24px;
         line-height: 1;
         text-align: center;
     }
 
     .project__description--sub-title {
-        text-align: center;
-        margin: 12px 0;
+        display: none;
     }
 
     .projectNav-wrapper,
