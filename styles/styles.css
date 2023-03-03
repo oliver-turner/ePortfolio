@@ -640,16 +640,19 @@ Projects
     border-radius: 20px;
 }
 
-.project:hover .project__wrapper:before {
-    opacity: 0.7;
-}
+@media (hover:hover) {
 
-.project:hover .project__img {
-    filter: blur(3px);
-}
+    .project:hover .project__wrapper:before {
+        opacity: 0.7;
+    }
 
-.project:hover .project__description {
-    opacity: 1;
+    .project:hover .project__img {
+        filter: blur(3px);
+    }
+
+    .project:hover .project__description {
+        opacity: 1;
+    }
 }
 
 .project__description {
@@ -703,10 +706,13 @@ Projects
     transition: all 300ms ease;
 }
 
-.sliderButton.prev:hover,
-.sliderButton.next:hover {
-    background-color: rgb(28, 29, 37, 0.7);
-    font-size: 50px;
+@media (hover:hover) {
+
+    .sliderButton.prev:hover,
+    .sliderButton.next:hover {
+        background-color: rgb(28, 29, 37, 0.7);
+        font-size: 50px;
+    }
 }
 
 .projectNav-wrapper {
