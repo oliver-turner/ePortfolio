@@ -767,6 +767,17 @@ footer {
     color: #fff;
 }
 
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footerGrid {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer__logo--popper {
     position: absolute;
     left: 20px;
@@ -776,20 +787,16 @@ footer {
     transition: all 300ms ease;
 }
 
-.footer__anchor {
-    margin-bottom: 20px;
-    position: relative;
-}
-
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
 }
 
-.footerGrid {
-    margin: 0 50px;
-    display: flex;
-    justify-content: space-between;
+@media (hover:none) {
+
+    .footer__logo--popper {
+        display: none;
+    }
 }
 
 .footer__links,
