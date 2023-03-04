@@ -356,7 +356,7 @@ About me
 
 
 .scrollIcon {
-    width: 75px;
+    width: 100px;
     margin: 0 auto;
     text-align: center;
     transform: translateY(-100px);
@@ -675,8 +675,10 @@ Projects
     }
 }
 
-.project .project__img {
-    filter: blur(1px);
+@media (hover:none) {
+    .project .project__img {
+        filter: blur(1px);
+    }
 }
 
 .project__description {
