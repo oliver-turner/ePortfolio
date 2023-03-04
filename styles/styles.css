@@ -172,6 +172,7 @@ nav {
 .logo {
     width: 100px;
     filter: var(--brandLogo__colour);
+    -webkit-filter: var(--brandLogo__colour);
 }
 
 .burgerMenu a {
