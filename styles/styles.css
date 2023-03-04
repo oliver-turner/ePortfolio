@@ -671,8 +671,7 @@ Projects
 
     .sliderButton.prev:hover,
     .sliderButton.next:hover {
-        background-color: rgb(28, 29, 37, 0.7);
-        font-size: 50px;
+        background-color: rgb(28, 29, 37, 0.5);
     }
 }
 
@@ -682,8 +681,7 @@ Projects
 
 .project__description {
     position: absolute;
-    top: 35%;
-    left: 90px;
+    top: 55%;
     max-width: 550px;
     z-index: 3;
     opacity: 1;
@@ -692,10 +690,6 @@ Projects
 
 .project__description--title {
     font-style: 40px;
-}
-
-.project__description--para {
-    margin: 16px 0;
 }
 
 .project__description--link {
@@ -1087,7 +1081,7 @@ Small Form Factor
     }
 
     .project__description {
-        top: 60%;
+        top: 55%;
         left: 30px;
     }
 
